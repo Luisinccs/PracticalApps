@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Northwind.Mvc.Models;
 using Packt.Shared;
@@ -30,6 +31,7 @@ public class HomeController : Controller {
         return View(model);
     }
 
+    [Authorize(Roles = "Administrators")]
     public IActionResult Privacy() {
         return View();
     }
@@ -68,5 +70,7 @@ public class HomeController : Controller {
         );
         return View(model);
     }
+        
+
 }
 
