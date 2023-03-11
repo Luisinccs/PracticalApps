@@ -21,6 +21,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(
 // Adds support for MVC controllers with views
 builder.Services.AddControllersWithViews();
 builder.Services.AddNorthwindContext();
+builder.Services.AddOutputCache(options => {
+    options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(10);
+});
 var app = builder.Build();
 
 // Section 3 Configure the HTTP request pipeline.
@@ -39,10 +42,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseOutputCache();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+app.MapGet("/notcached", () => DateTime.Now.ToString());
+app.MapGet("/cached", () => DateTime.Now.ToString()).CacheOutput();
 
 // Section 4 - start the host web server listening for HTTP requests
 app.Run();

@@ -7,8 +7,14 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p class="alert alert-primary">@DateTime.Now.ToLongTimeString()</p>
+    <p class="alert alert-primary">@DateTime.Now.ToLongTimeString()</p>    
     <p><a asp-action="ModelBinding" asp-controller="Home">Binding</a></p>
+
+    <h3>Query Products by price</h3>
+    <form asp-action="ProductsThatCostMoreThan" method="GET">
+        <input name="price" placeholder="Enter a product price"/>
+        <input type="submit">
+    </form>
 
     @if (Model is not null)
     {
