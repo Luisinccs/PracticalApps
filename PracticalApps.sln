@@ -17,6 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc", "Northwind.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApi", "Northwind.WebApi\Northwind.WebApi.csproj", "{D6FFD4C2-38F9-4A76-841C-0B5CA71F657C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.BlazorServer", "Northwind.BlazorServer\Northwind.BlazorServer.csproj", "{83AC1930-6D3F-4CCA-93E1-26234C944F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.BlazorWasm.Client", "Northwind.BlazorWasm\Client\Northwind.BlazorWasm.Client.csproj", "{0AFBE4C9-CA2B-4215-BBC4-30D856FA65AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.BlazorWasm.Server", "Northwind.BlazorWasm\Server\Northwind.BlazorWasm.Server.csproj", "{A93C2457-CAF2-4B32-AF38-EF8617DAC96C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.BlazorWasm.Shared", "Northwind.BlazorWasm\Shared\Northwind.BlazorWasm.Shared.csproj", "{1E2DEE36-B4B4-4765-A36A-70DD677CA005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +59,22 @@ Global
 		{D6FFD4C2-38F9-4A76-841C-0B5CA71F657C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6FFD4C2-38F9-4A76-841C-0B5CA71F657C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6FFD4C2-38F9-4A76-841C-0B5CA71F657C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AC1930-6D3F-4CCA-93E1-26234C944F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AC1930-6D3F-4CCA-93E1-26234C944F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AC1930-6D3F-4CCA-93E1-26234C944F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AC1930-6D3F-4CCA-93E1-26234C944F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AFBE4C9-CA2B-4215-BBC4-30D856FA65AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AFBE4C9-CA2B-4215-BBC4-30D856FA65AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AFBE4C9-CA2B-4215-BBC4-30D856FA65AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AFBE4C9-CA2B-4215-BBC4-30D856FA65AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93C2457-CAF2-4B32-AF38-EF8617DAC96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93C2457-CAF2-4B32-AF38-EF8617DAC96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93C2457-CAF2-4B32-AF38-EF8617DAC96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93C2457-CAF2-4B32-AF38-EF8617DAC96C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2DEE36-B4B4-4765-A36A-70DD677CA005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2DEE36-B4B4-4765-A36A-70DD677CA005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2DEE36-B4B4-4765-A36A-70DD677CA005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2DEE36-B4B4-4765-A36A-70DD677CA005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
