@@ -1,0 +1,10 @@
+GET http://localhost:5000/api/customers/ HTTP/1.1
+###
+GET http://localhost:5000/api/customers/?country=Germany HTTP/1.1
+###
+GET http://localhost:5000/api/customers/?country=USA HTTP/1.1
+Accept: application/xml
+###
+GET http://localhost:5000/api/customers/ALFKI HTTP/1.1
+###
+GET http://localhost:5000/api/customers/ladda HTTP/1.1

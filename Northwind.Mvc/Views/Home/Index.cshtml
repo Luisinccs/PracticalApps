@@ -16,6 +16,12 @@
         <input type="submit">
     </form>
 
+    <h3>Query customers from a service</h3>
+    <form asp-action="Customers" method="get">
+        <input name="country" placeholder="Enter a country" />
+        <input type="submit" />
+    </form>
+
     @if (Model is not null)
     {
         <div id="categories" class="carousel slide" data-bs-ride="carousel"

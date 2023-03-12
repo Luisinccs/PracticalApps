@@ -1,0 +1,16 @@
+ POST http://localhost:5000/api/customers/ HTTP/1.1
+Content-Type: application/json
+Content-Length: 288
+
+{
+    "customerID": "LADDA",
+    "companyName": "Sodaven",
+    "contactName": "Luis D'Andrea",
+    "contactTitle": "Eng",
+    "address": "Main Street",
+    "city": "Caracas",
+    "region": "CA",
+    "postalCode": "90210",
+    "country": "Venezuela",
+    "phone": "(123) 555-01234"
+}

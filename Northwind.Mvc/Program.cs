@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Mvc.Data;
 using Packt.Shared;
+using System.Net.Http.Headers;
 
 // Section 2 - Configures the host web server including services
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +24,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddNorthwindContext();
 builder.Services.AddOutputCache(options => {
     options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(10);
+});
+builder.Services.AddHttpClient(name: "Norhtwind.WebApi", 
+configureClient: options => {
+    options.BaseAddress = new Uri("http://localhost:5002");
+    options.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(
+        mediaType: "application/json", quality:1.0));
 });
 var app = builder.Build();
 
